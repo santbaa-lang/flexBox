@@ -1,0 +1,403 @@
+:root{
+    --main-color:red;
+   --section-padding:150px;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* height: 100vh; */
+      /* padding-top: 90px; */
+    /* background-color: rgb(156, 131, 33); */
+    font-family: 'Barlow',sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* ################# utality classes######## */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.btn-primary{
+    color:#fff;
+    background-color: #16a083;
+}
+
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right:30px;
+    font-weight: 700;
+    border-radius: 50px;
+    margin: 30px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+
+
+/* #####################start header #################*/
+/* header .nav-bar-container input[type='checkbox'],
+header .nav-bar-container span{
+    display: none;
+} */
+header{
+    z-index: 999;
+    box-shadow: 1px 5px 10px 0px #aaa;
+    padding-left:var(--section-padding);
+    padding-right:var(--section-padding);
+       background-color: rgba(208, 222, 233, 0.61) ;
+       opacity: 0.87;
+/* padding-bottom: 30px; */
+       position: fixed;
+ top: 0;
+  left: 0;
+  width: 100%;
+       /* background-color: rgb(156, 131, 33) ; */
+
+    }
+.nav-bar-container {
+    
+    /* padding-bottom: 15px; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items:center;
+
+
+    height: 69px;
+
+}
+
+
+.nav-bar-container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar-container nav .humburger-icon{
+  
+    display: flex;
+    flex-direction: column;
+}
+.nav-bar-container nav .humburger-icon span{
+    background-color: rgb(11, 91, 64);
+  width: 40px;
+  margin-bottom: 10px;
+    height: 3px;
+}
+.nav-bar-container nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.nav-bar-container nav ul li{
+    margin-left: 1.6rem;
+    font-size: 1rem;
+}
+header h1{
+    font-size: 2rem;
+}
+.nav-bar-container nav ul li a{
+    color: #444;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+}
+.nav-bar-container nav ul li a:hover{
+    color: #117964;
+}
+
+ /* end header */
+  
+ /* ###########################################3 start about#########################33 */
+   
+.showcast{
+    position: relative;
+    height: 50vh;
+    background-image: url(../img/header-image2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+      overflow: hidden; 
+}
+.showcast::before{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    content: '';
+    background-color: rgba(154, 170, 184, 0.103);
+      z-index: 1; 
+}
+.showcast .showcast-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.5rem;
+}
+.showcast .showcast-container p {
+    color: #29292c;
+
+}
+/* .showcast .showcast-container a{
+ 
+    width: 130px;
+   
+    color: aliceblue;
+   
+ 
+    
+    
+} */
+
+
+
+
+
+
+
+
+
+
+ /* ##############################################################3333333 end about #############################33 */
+/* start about$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$44 */
+ /* end about$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+.about{
+    background-color: #e9e9e934;
+}
+
+ .about  .about-container{
+  margin-left: 99px;
+  
+    padding: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.about  .about-container .image{
+  flex: 1 1 400px;
+  padding: 30px;
+  transform: translateX(150%);
+  /*البدايةمنبره*/animation: about-img-animation 1s ease-in-out forwards;
+
+}
+.about  .about-container .image img{
+  height: 300px;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin: auto;
+}
+.about  .about-container .text{
+    transform: translateX(-150%);
+    /*البدايةمنبره*/animation: about-text-animation 1s ease-in-out forwards;
+    flex: 1 1 400px;
+    padding: 30px;
+    -webkit-transform: translateX(-150%);
+    -moz-transform: translateX(-150%);
+    -ms-transform: translateX(-150%);
+    -o-transform: translateX(-150%);
+}
+.about  .about-container .text pre{ font-size: 30px; font-weight: 900; 
+     line-height: 1.5;
+}
+.about  .about-container .text p{
+    font-size: 18px;
+}
+@keyframes about-img-animation {
+  100% {
+    transform: translateX(0); /* ترجع لمكانها الطبيعي */
+  }
+}
+@keyframes about-text-animation {
+  100% {
+    transform: translateX(0); /* ترجع لمكانها الطبيعي */
+  }
+}
+
+
+
+ /* start food %$$$$$$$$$$$$$$$$$$$%%%%%%%$*/
+
+.food{
+   
+    padding-left: 100px;
+}
+ .food .food-container{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap:30px
+ }
+  .food h2{
+    padding: 30px;
+    margin-bottom: 30px;
+  
+text-align: center;
+}
+.food .food-container .image {
+  position: relative;
+  overflow: hidden; }
+
+.food .food-container .image img {
+ min-height: 200px;
+  width: 100%;
+  display: block;
+}
+
+
+.food .food-container .image .text {
+  position: absolute;
+  bottom: -100%;              
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 25, 20, 0.8); 
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: bottom 0.6s ease-in-out; 
+}
+
+
+.food .food-container .image:hover .text {
+  bottom: 0;}
+
+
+ /* end food $$$$$$$$$$$$$%%%%%%$$$$ */
+ /* /* start food-menu$$$$$$$$$$$$$$$$$$$$$$ * */
+ .food-menu{
+    padding-left: 200px;
+    padding-right: 200px;
+ }
+ .food-menu h2{
+    text-align: center;
+    margin: 50px;
+ }
+ .food-menu-container{
+      margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fill,minmax(370px,1fr));
+   gap: 40px;
+    justify-items: center;
+    justify-content: center;
+ }
+  .food-menu-container .meal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .food-menu-container .meal span{
+    color: #116857bf;
+/* padding-top: 15px; */
+ display: inline-block;
+margin-top: 10px;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .food-menu-container .meal .image{
+    /* width: 500px; */
+
+  }
+  .food-menu-container .meal .image img{
+    height: 150px;
+    margin-bottom: 20px;
+    width: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/* start testiemonation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5 */
+.testiemonation{
+    padding: 30px;
+    background-color: #aaaaaa1b;
+}
+.testiemonation .testiemonation-container{
+    gap: 30px;
+    display: grid;
+   grid-template-columns: repeat(auto-fill,minmax(370px,1fr));
+
+}
+
+.testiemonation .testiemonation-container .testiemonation-box{
+    padding: 15px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.testiemonation .testiemonation-container .testiemonation-box p,
+.testiemonation .testiemonation-container .testiemonation-box  h4,
+.testiemonation h2{
+    padding: 10px;
+    text-align: center;
+}
+.testiemonation .testiemonation-container .image img{
+    height: 150px;
+    width: 150px;
+    display: block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/* end testiemonation%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555 */
+  /* start contact%%%%%%%%%%%%%%%%%%%%%5555555555 */
+.contact{
+
+}
+.contact-container{
+    display: flex;
+    padding: 50px;
+    gap: 3px;
+}
+
+.contact-container img{
+width: 600px;
+height: 400px;
+}
+  input, textarea {
+  border: none;        /* يشيل الحدود */
+  outline: none; 
+  font-size: 23px;      /* يشيل الـ outline الأزرق لما تدوس */
+}
+
+          /* end contact 555555555555555555555555555555555555%%%%%%%%%%%%%%% */
